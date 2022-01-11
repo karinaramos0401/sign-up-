@@ -4,9 +4,82 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="./css/main.css">
+
   <title>Refatorando Código</title>
 </head>
 <body>
-  
+  <div class="container">				   
+              <div class="options">
+                <button class="button__options">Cadastro</button>
+                <button class="button__options">Contato</button>
+              </div>
+    <div class="form-container">
+                <form action="" name="form__register" class="active">
+                  <h1 class="title__register">Cadastro</h1>
+
+                  <div class="form__group">
+                    <label for="name" class="name">Nome</label>
+                    <input type="text" class="form__control"  placeholder="Nome" id="name" name="name">
+                  </div>
+
+                  <div class="form__group">
+                    <label for="company" class="company">Nome da Empresa</label>
+                    <input type="text" class="form__control"  placeholder="Nome da Empresa" id="company" name="company">
+                  </div>
+
+                  <div class="form__group">
+                    <label for="email" class="email">E-mail</label>
+                    <input type="text" class="form__control" placeholder="E-mail"  id="email" name="email">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="telephone" class="telephone">Telefone</label>
+                    <input type="text" placeholder="Telefone" class="form__control" id="telephone" name="telephone">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message" class="message">Mensagem</label>
+                    <textarea placeholder="Mensagem" class="form__control" id="message" name="message"></textarea>
+                  </div>
+
+                  <button type="submit" class="button">Enviar <i class="fa fa-paper-plane"></i>
+                  </button>
+
+                </form>
+
+                <form action="" name="form__contact">
+                  <h1 class="title__contact">Contato</h1>
+                  <div class="form__group">
+                    <label for="contact__form" class="contact__form">Nome</label>
+                    <input type="text" name="contact" placeholder="Nome" class="form__control" id="contact__form">
+                  </div>
+
+                  <div class="form__group">
+                    <label for="contact__company" class="contact__company">Nome da Empresa</label>
+                    <input type="text" name="company" placeholder="Nome da Empresa" class="form__control" id="contact__company" >
+                  </div>
+
+                  <div class="form__group">
+                    <label for="contact__email" class="contact__email">E-mail</label>
+                    <input type="text" class="form__control" placeholder="E-mail"  id="contact__email" name="email">
+                  </div>
+
+                  <div class="form__group">
+                    <label for="contact__telephone" class="contact__telephone">Telefone</label>
+                    <input type="text" class="form__control" placeholder="Telefone"  id="contact__telephone" name="telephone">
+                  </div>
+
+                  <div class="form__group">
+                    <label for="contact__message" class="sr-only">Mensagem</label>
+                    <textarea  class="form__control" placeholder="Mensagem"  id="contact__message" name="message"></textarea>
+                  </div>
+              
+                  <button class="btn" type="submit">Enviar <i class=" fa fa-paper-plane"></i>
+                  </button>
+                </form>
+              </div>            
+      </div>
 </body>
 </html>
