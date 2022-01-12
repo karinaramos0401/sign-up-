@@ -12,9 +12,6 @@
   transition: all .5s;
 }
 
-
-
-
 .title__form {
   color: var(--orange);
   font-size: 1.25rem;
@@ -45,22 +42,26 @@
 }
 
 .form__control {
-  align-items: center;
-  border-bottom: solid 2px var(--orange);
+  border: none;
+  border-bottom: 2px solid var(--orange);
   border-radius: 0;
-  border:none;
   color: var(--orange);
-  display: block;
   display: flex;
-  padding: 0.500rem 0.75rem;
+  padding: 0.5rem 0.75rem;
   width: 350px;
-
+  outline: none;
 
 }
 
+::placeholder {
+  color: var(--orange);
+  font-family: var(--primary-font);
+  font-size: 15x;
+  
+}
+
 .form__control:focus {
-  background-color: var(--orange);
-  opacity: 0.1;
+  background-color: var(--orange-rgba);
 }
 
 .message {
@@ -78,12 +79,13 @@
 .form__control--message {
   border: 2px solid var(--orange);
   height: 6.8rem;
-  margin-top: 20px;
+  margin-top: 10px;
   outline: none;
   position: absolute;
   resize: none;
   top: 20px;
   width: 22.9rem;
+  padding-left: 0.625rem;
   
 
 }
@@ -97,7 +99,7 @@
   font-size: 20px;
   height: 2.3rem;
   margin-left: 3px;
-  margin-top: 10rem;
+  margin-top: 11rem;
   transform: all 0.5s;
   transition: 0.2s;
   width: 5rem;
