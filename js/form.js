@@ -1,12 +1,23 @@
-$(document).ready(function(){
-  $('.escolher-form button').click(function(){
-     $('.escolher-form button').removeClass('active');
-     $(this).addClass('active');
-     var options = $('.escolher-form > button');
-     var number = options.index($(this));
-     number++;
-     console.log(number);
-     $('.form-container > form').removeClass('active');
-     $('.form-container > form:nth-child(' + number + ')').addClass('active');
+const forms = document.querySelectorAll('[data-form]')
+const buttons = document.querySelectorAll('[data-button]');
+buttons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const formValue = button.dataset.button
+    button.classList.add('button--active')
+    forms.forEach((form) => {
+      if(form.dataset.form === formValue) {
+        form.classList.add('form--active')
+      } else {
+        form.classList.remove('form--active')
+      }
+    })
   })
 })
+
+//pegar todos os botões
+//pegar todos os formulários
+//quando eu clicar em um botão
+// qual é o formulário relacionado a esse botão? (botão clicado)
+//quero que mostre o formulário relacionado
+//e esconda os outros 
+

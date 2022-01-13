@@ -15,11 +15,11 @@
 <body>
   <div class="container">				   
     <div class="options">
-      <button class="button__options">Cadastro</button>
-      <button class="button__options">Contato</button>
+      <button class="button__options" data-button="register">Cadastro</button>
+      <button class="button__options active" data-button="contact" >Contato</button>
     </div> 
     <div class="form__container">
-      <form action="" name="form__register " class="active">
+      <form action="" class="form" data-form="register" name="form__register ">
         <h1 class="title__form">Cadastro</h1>
         <div class="form__group">
           <input aria-label="Nome" placeholder="Nome" type="text" class="form__control"  id="name" name="name">
@@ -46,7 +46,7 @@
 
       </form>
 
-      <form action="" name="form__contact">
+      <form action="" data-form="contact" class=" form form--active" name="form__contact">
         <h1 class="title__form">Contato</h1>
         <div class="form__group">
           <input type="text" aria-label="Nome" placeholder="Nome" name="contact" kr="Nome" class="form__control" id="contact__form">
@@ -74,5 +74,7 @@
           
     </div>            
   </div>
+
+  <script src="js/form.js"></script>
 </body>
 </html>
