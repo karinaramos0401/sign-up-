@@ -21,7 +21,6 @@ buttons.forEach((clickedButton) => {
         //e esconda os outros 
         form.classList.remove('form--active')
       }
-      buttons.forEach()
     })
   })
 })
